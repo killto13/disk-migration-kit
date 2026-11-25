@@ -19,11 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-ADDITIONAL SAFETY NOTICE
-
-This software performs destructive disk operations, including disk cleaning,
-partition-table replacement and formatting. It is provided for educational and
-reference purposes only. You are solely responsible for verifying backups,
-target disk identity and recovery procedures. The authors accept no liability
-for data loss, hardware damage or business interruption.
