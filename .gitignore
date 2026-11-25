@@ -1,0 +1,45 @@
+﻿# Disk images and raw metadata
+*.img
+*.img.partial
+*.vhd
+*.vhdx
+*.vmdk
+*.bin
+*.iso
+
+# Logs, inventories and generated result JSON
+*.json
+
+# Logs and inventories
+*.log
+*.etl
+*.csv
+*.blg
+logs/
+manifests/
+recovery_output/
+data/
+quarantine/
+
+# Local configuration and secrets
+config.psd1
+*.secret
+*.key
+.env
+
+# PowerShell transcripts
+*.txt
+!requirements.txt
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Keep example config
+!examples/config.example.psd1
+
+# Build outputs
+dist/
+*.exe
+*.zip

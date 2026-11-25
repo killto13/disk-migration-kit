@@ -1,0 +1,62 @@
+name: build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Parse PowerShell scripts
+        shell: pwsh
+        run: |
+          $failed = $false
+          Get-ChildItem -Path .\scripts -Filter *.ps1 -File | ForEach-Object {
+            $tokens = $null
+            $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$errors)
+            if ($errors.Count -gt 0) {
+              Write-Host "Parse errors in $($_.Name):"
+              $errors | ForEach-Object { Write-Host "  $($_.Message)" }
+              $failed = $true
+            }
+            else {
+              Write-Host "OK: $($_.Name)"
+            }
+          }
+          if ($failed) { exit 1 }
+
+      - name: Build portable app
+        shell: pwsh
+        run: |
+          .\app\build.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Run self-test
+        shell: pwsh
+        run: |
+          $exe = ".\dist\EDiskMigration.exe"
+          if (-not (Test-Path $exe)) { throw "EXE not found" }
+          $p = Start-Process -FilePath $exe -ArgumentList "--selftest" -Wait -PassThru
+          Get-Content "$env:TEMP\EDiskMigration-selftest.txt" -Encoding UTF8 -ErrorAction SilentlyContinue
+          if ($p.ExitCode -ne 0) { exit $p.ExitCode }
+
+      - name: Package
+        shell: pwsh
+        run: |
+          .\app\package.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Upload portable package
+        uses: actions/upload-artifact@v4
+        with:
+          name: EDiskMigration-portable
+          path: dist\EDiskMigration-portable-*.zip
+          if-no-files-found: error
