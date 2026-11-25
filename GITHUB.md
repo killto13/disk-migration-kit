@@ -99,6 +99,12 @@ This is a reference implementation. Test on a VM or disposable disk first.
 
 ## Review boundary
 
-This repository is prepared locally and has not been pushed to any remote.
-Publishing is a separate, explicit step. The browser login session is not used
-by the project.
+This repository is currently **private**. Its content was uploaded for your
+review through the GitHub API. It has **not** been made public.
+
+After review:
+
+1. Open the repository settings.
+2. Change visibility to public only after confirming the README, license and
+   privacy checks.
+3. Create the `v1.0.0` release and attach the portable package.
