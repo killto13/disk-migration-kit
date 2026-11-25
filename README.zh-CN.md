@@ -288,7 +288,7 @@ It is **not** a one-click converter and comes with no warranty. Test on disposab
 
 ## 11. License
 
-MIT. See [LICENSE](LICENSE).
+MIT。任何人都可以使用、修改、再发布，也可以将修改后的版本用于商业用途；保留版权声明和 MIT 许可声明即可，不提供担保。详见 [LICENSE](LICENSE)。
 
 ---
 

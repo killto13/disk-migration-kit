@@ -71,7 +71,9 @@ Output: `dist\EDiskMigration-portable-YYYYMMDD.zip`.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. Anyone may use, modify, redistribute, and use modified versions commercially, provided the copyright notice and the MIT permission notice are retained. There is no warranty.
+
+中文：任何人都可以使用、修改、再发布，也可以将修改后的版本用于商业用途；保留版权声明和 MIT 许可声明即可，不提供担保。
 
 ## Privacy
 

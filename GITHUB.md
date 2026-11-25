@@ -97,14 +97,13 @@ Portable Windows GUI for a verifiable dynamic-disk → basic-MBR migration.
 This is a reference implementation. Test on a VM or disposable disk first.
 ```
 
-## Review boundary
+## Publication status
 
-This repository is currently **private**. Its content was uploaded for your
-review through the GitHub API. It has **not** been made public.
+This repository is **public** under the MIT license.
 
-After review:
+- Anyone may use, modify and redistribute the project.
+- Modified versions may be used commercially.
+- The copyright notice and MIT permission notice must be retained.
+- There is no warranty.
 
-1. Open the repository settings.
-2. Change visibility to public only after confirming the README, license and
-   privacy checks.
-3. Create the `v1.0.0` release and attach the portable package.
+The `v1.0.0` release contains the portable package and checksum.

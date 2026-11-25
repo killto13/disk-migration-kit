@@ -207,7 +207,7 @@ See [SECURITY.md](SECURITY.md) and [CONTRIBUTING.md](CONTRIBUTING.md) before pub
 
 ## 10. License
 
-MIT. See [LICENSE](LICENSE).
+MIT. Anyone may use, modify, redistribute, and use modified versions commercially, provided the copyright notice and the MIT permission notice are retained. There is no warranty. See [LICENSE](LICENSE).
 
 ---
 
