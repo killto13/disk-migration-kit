@@ -43,6 +43,15 @@ It includes a portable WinForms GUI, a 1-to-7 step workflow, bilingual UI, a two
 
 Full English README: [README.en.md](README.en.md)
 
+## Download / 下载
+
+- 仓库内便携包：[release/EDiskMigration-portable-20261125.zip](release/EDiskMigration-portable-20261125.zip)
+- 单独 EXE：[release/EDiskMigration.exe](release/EDiskMigration.exe)
+- 校验值：[release/EDiskMigration-SHA256SUMS.txt](release/EDiskMigration-SHA256SUMS.txt)
+- GitHub Release：[v1.0.0](https://github.com/killto13/disk-migration-kit/releases/tag/v1.0.0)
+
+> The software is also attached to the GitHub Release. Extract the whole zip; do not copy only the EXE.
+
 ## Safety first
 
 > This tool erases the target physical disk. Use only on a non-system/non-boot disk. Back up first and test on a VM or disposable disk.

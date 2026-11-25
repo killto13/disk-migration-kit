@@ -14,6 +14,15 @@
 > 不要把本项目当作“一键动态转基本”工具；它做的是**数据迁移 + 重建基本盘 + 回拷校验**。  
 > 使用前必须准备独立备份，并确认目标盘序列号。作者不对数据丢失负责。
 
+## 下载
+
+- 仓库内便携包：[release/EDiskMigration-portable-20261125.zip](release/EDiskMigration-portable-20261125.zip)
+- 单独 EXE：[release/EDiskMigration.exe](release/EDiskMigration.exe)
+- 校验值：[release/EDiskMigration-SHA256SUMS.txt](release/EDiskMigration-SHA256SUMS.txt)
+- GitHub Release：[v1.0.0](https://github.com/killto13/disk-migration-kit/releases/tag/v1.0.0)
+
+> 必须完整解压后运行 `EDiskMigration.exe`，不要只复制 EXE。
+
 ---
 
 ## 1. 这个项目解决什么问题

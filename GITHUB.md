@@ -42,6 +42,17 @@ backup
 **License:** MIT  
 **Default branch:** `main` (rename `master` if you prefer)
 
+## Portable artifact in the repository
+
+The packaged portable software is committed under [`release/`](release/):
+
+- `release/EDiskMigration-portable-20261125.zip`
+- `release/EDiskMigration.exe`
+- `release/EDiskMigration-SHA256SUMS.txt`
+- `release/README.md`, `release/README.zh-CN.md`, `release/README.en.md`
+
+The same files are also attached to the `v1.0.0` GitHub Release.
+
 ## Before publishing / 发布前审核
 
 - [ ] Review `README.md`, `README.zh-CN.md`, `README.en.md`.

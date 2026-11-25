@@ -1,4 +1,4 @@
-﻿# Disk images and raw metadata
+# Disk images and raw metadata
 *.img
 *.img.partial
 *.vhd
@@ -43,3 +43,8 @@ desktop.ini
 dist/
 *.exe
 *.zip
+
+# Repository-bundled portable artifacts (explicitly allowed)
+!release/EDiskMigration.exe
+!release/EDiskMigration-portable-*.zip
+!release/EDiskMigration-SHA256SUMS.txt

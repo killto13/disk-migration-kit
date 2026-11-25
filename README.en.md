@@ -12,6 +12,15 @@
 > **Destructive operation warning**  
 > This tool erases the target physical disk. Use it only on a non-system/non-boot disk. Back up first and test on a VM or a disposable disk. Do not use it as a one-click "dynamic to basic" converter.
 
+## Download
+
+- Repository-bundled portable zip: [release/EDiskMigration-portable-20261125.zip](release/EDiskMigration-portable-20261125.zip)
+- Standalone EXE: [release/EDiskMigration.exe](release/EDiskMigration.exe)
+- Checksums: [release/EDiskMigration-SHA256SUMS.txt](release/EDiskMigration-SHA256SUMS.txt)
+- GitHub Release: [v1.0.0](https://github.com/killto13/disk-migration-kit/releases/tag/v1.0.0)
+
+> Extract the whole zip before running. Do not copy only the EXE.
+
 ---
 
 ## 1. The problem
